@@ -37,6 +37,7 @@
             this.listBoxLog = new System.Windows.Forms.ListBox();
             this.textBoxLog = new System.Windows.Forms.TextBox();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -109,8 +110,13 @@
             // serialPort1
             // 
             this.serialPort1.BaudRate = 38400;
-            this.serialPort1.ReceivedBytesThreshold = 32;
+            this.serialPort1.ReceivedBytesThreshold = 11;
             this.serialPort1.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.serialPort1_DataReceived);
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
@@ -142,6 +148,7 @@
         private System.Windows.Forms.ListBox listBoxLog;
         private System.Windows.Forms.TextBox textBoxLog;
         private System.IO.Ports.SerialPort serialPort1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

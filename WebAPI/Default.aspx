@@ -41,9 +41,8 @@
                     <td width="520px">http://gcsj.hxlxz.com/API.aspx?api=lookup</td>
                     <td width="346px">
                         <input type="hidden" name="API" value="lookup" />
-                        name<input name="name" value="T" /><br />
-                        starttime<input name="starttime" value="2016-12-26 00:00:00" /><br />
-                        endtime<input name="endtime" value="2016-12-30 00:00:00" />
+                        starttime<input name="starttime" value="2017-06-20 00:00:00" /><br />
+                        endtime<input name="endtime" value="2017-06-30 00:00:00" />
                     </td>
                     <td>
                         <input type="submit" value="执行" />
@@ -51,6 +50,7 @@
                 </tr>
             </table>
         </form>
+        <!--
         <form action="API.aspx">
             <table height="80px" width="1019px">
                 <tr>
@@ -66,6 +66,7 @@
                 </tr>
             </table>
         </form>
+        -->
         <form action="API.aspx">
             <table height="100px" width="1019px">
                 <tr>
@@ -73,8 +74,46 @@
                     <td width="520px">http://gcsj.hxlxz.com/API.aspx?api=upload</td>
                     <td width="346px">
                         <input type="hidden" name="API" value="upload" />
-                        name<input name="name" value="T" /><br />
-                        value<input name="value" value="23.5" />
+                        lightz<input name="lightz" value="44" /><br />
+                        lightx<input name="lightx" value="55" /><br />
+                        lightl<input name="lightl" value="66" /><br />
+                        tempz<input name="tempz" value="21" /><br />
+                        tempx<input name="tempx" value="22" /><br />
+                        templ<input name="templ" value="23" /><br />
+                        wetz<input name="wetz" value="33" /><br />
+                        wetx<input name="wetx" value="44" /><br />
+                        wetl<input name="wetl" value="55" />
+                    </td>
+                    <td>
+                        <input type="submit" value="执行" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+        
+        <form action="API.aspx">
+            <table height="100px" width="1019px">
+                <tr>
+                    <td width="67px">ContralSet</td>
+                    <td width="520px">http://gcsj.hxlxz.com/API.aspx?api=contralset</td>
+                    <td width="346px">
+                        <input type="hidden" name="API" value="contralset" />
+                        time<input name="time" value="1" />
+                    </td>
+                    <td>
+                        <input type="submit" value="执行" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <form action="API.aspx">
+            <table height="100px" width="1019px">
+                <tr>
+                    <td width="67px">ContralGet</td>
+                    <td width="520px">http://gcsj.hxlxz.com/API.aspx?api=contralget</td>
+                    <td width="346px">
+                        <input type="hidden" name="API" value="contralget" />
+                        
                     </td>
                     <td>
                         <input type="submit" value="执行" />
